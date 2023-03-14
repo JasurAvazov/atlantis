@@ -682,13 +682,12 @@ button.swiper-pagination-bullet {
 }
 
 .swiper {
-  background-color: green;
   width: 100%;
   height: 100vh;
 }
 
-.swiper-slide {
-  background-color: red;
+.swiper-wrapper {
+  will-change: transform;
 }
 
 * {
@@ -744,8 +743,7 @@ ul {
 }
 
 body {
-  background: #000;
-  color: #fff;
+  background: white;
 }
 
 body main {
@@ -780,11 +778,5 @@ body main {
 @media (min-width: 1400px) {
   .container {
     max-width: 1320px;
-  }
-}
-
-@media (max-width: 992px) {
-  body {
-    background: rgb(34, 34, 34);
   }
 }

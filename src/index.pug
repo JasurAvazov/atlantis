@@ -1,3 +1,5 @@
+include components/intro
+
 doctype html
 html(lang="en")
     head
@@ -10,12 +12,9 @@ html(lang="en")
         .wrapper 
             .pagesSwiper.swiper
                 .swiper-wrapper
-                    section.section1.swiper-slide
-
+                    +intro
                     section.section2.swiper-slide
-
                     section.section3.swiper-slide
-
                 .swiper-pagination
 
         script(src="js/app.min.js") 

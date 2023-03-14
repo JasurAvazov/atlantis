@@ -8,10 +8,17 @@ export function init() {
         speed: 1000,
         spaceBetween: 30,
         mousewheel: true,
+        clickable: false,
+        preventInteractionOnTransition: true,
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
         },
+    });
+
+    pages.on('slideChange', function () {
+        let currentSlide = pages.activeIndex + 1
+        console.log('Текущий слайд: ', currentSlide);
     });
 
     // window.addEventListener('wheel', function(event) {
