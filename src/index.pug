@@ -8,10 +8,14 @@ html(lang="en")
         title Document
     body 
         .wrapper 
-            include components/header 
-            +header 
-            include components/main 
-            +main 
-            include components/footer 
-            +footer
+            .pagesSwiper.swiper
+                .swiper-wrapper
+                    section.section1.swiper-slide
+
+                    section.section2.swiper-slide
+
+                    section.section3.swiper-slide
+
+                .swiper-pagination
+
         script(src="js/app.min.js") 

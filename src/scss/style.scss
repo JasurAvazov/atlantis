@@ -1,5 +1,6 @@
 // Главный Sass файл
 
+
 // Шрифты
 @import "fonts";
 
@@ -11,7 +12,10 @@
     'abstracts/placeholders';
 
 // vendors
-// @import 'vendors/bootstrap'
+@import
+    '../../node_modules/swiper/swiper.scss',
+    '../../node_modules/swiper/modules/pagination/pagination.scss',
+    '../../node_modules/swiper/modules/navigation/navigation.scss';
 
 // base
 @import 
@@ -20,12 +24,9 @@
 
 // layout
 @import 
-    'layout/navigation',
-    'layout/grid',
+    'layout/pages.modules.scss',
     'layout/header',
-    'layout/footer',
-    'layout/sidebar',
-    'layout/forms';
+    'layout/footer';
 
 // components
 @import 
